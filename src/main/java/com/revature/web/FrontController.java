@@ -12,10 +12,11 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet("/FrontController")
 public class FrontController extends HttpServlet {
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		final String URI = request.getRequestURI().replace("/FrontController/", "");
-		
-		switch(URI) {
+
+		switch (URI) {
 		case "login":
 			break;
 		case "employees":
@@ -23,7 +24,8 @@ public class FrontController extends HttpServlet {
 		}
 	}
 
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		doGet(request, response);
 	}
 
