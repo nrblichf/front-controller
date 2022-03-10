@@ -10,6 +10,11 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 	</properties>
 
+	<properties>
+		<sonar.organization>nrblichf</sonar.organization>
+		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+	</properties>
+	
 	<dependencies>
 
 		<!-- The javax.servlet dependency is an api that gives us classes and interfaces 
